@@ -11,5 +11,5 @@
 ## ⚪ You can register and then you can login your self.
 ## ⚪ Also has JWT.
 ## ⚪ Also has dashboard.
-## ⚪ Also has Admin.
+## ⚪ Also has admin panel.
 ## ⚪ Lastly it has payment method.

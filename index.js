@@ -11,7 +11,8 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-var uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-shard-00-00.up5jq.mongodb.net:27017,cluster0-shard-00-01.up5jq.mongodb.net:27017,cluster0-shard-00-02.up5jq.mongodb.net:27017/?ssl=true&replicaSet=atlas-w5x22v-shard-0&authSource=admin&retryWrites=true&w=majority`;
+
+const uri = `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-shard-00-00.up5jq.mongodb.net:27017,cluster0-shard-00-01.up5jq.mongodb.net:27017,cluster0-shard-00-02.up5jq.mongodb.net:27017/?ssl=true&replicaSet=atlas-w5x22v-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,

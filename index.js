@@ -114,7 +114,7 @@ async function run() {
       );
       res.send(updatedDoc);
     });
-
+    //admin added
     app.put("/user/admin/:email", verifyJWT, async (req, res) => {
       const email = req.params.email;
       const requester = req.decoded.email;

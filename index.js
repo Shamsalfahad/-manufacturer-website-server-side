@@ -69,6 +69,8 @@ async function run() {
       const result = await toolCollection.deleteOne(filter);
       res.send(result);
     });
+    
+    //payment
     app.post("/create-payment-intent", verifyJWT, async (req, res) => {
       const order = req.body;
       const price = parseFloat(order.price);
